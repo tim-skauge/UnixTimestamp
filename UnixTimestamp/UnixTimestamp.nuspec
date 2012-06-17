@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>UnixTimestamp</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>tims</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://raw.github.com/mi7/UnixTimestamp/master/LICENSE.txt</licenseUrl>
+    <projectUrl>http://github.com/mi7/UnixTimestamp</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2012</copyright>
+    <tags>UnixTimestamp</tags>
+  </metadata>
+</package>

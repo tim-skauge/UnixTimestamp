@@ -39,5 +39,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnixTimestamp.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="UnixTimestamp.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
