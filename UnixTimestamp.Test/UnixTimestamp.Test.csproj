@@ -56,6 +56,15 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UnixTimestampTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnixTimestamp\UnixTimestamp.csproj">
+      <Project>{82F9ECD7-E1E2-4674-8348-FDCAE145E9C8}</Project>
+      <Name>UnixTimestamp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
