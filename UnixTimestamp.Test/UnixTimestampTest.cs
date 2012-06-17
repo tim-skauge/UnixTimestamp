@@ -12,7 +12,7 @@ namespace mi7.Test
         public void ValueIsExpected(int expected)
         {
             var actual = new UnixTimestamp(expected);
-            Assert.Equal(expected, actual.Value);
+            Assert.Equal(expected, actual.SecondsSinceEpoch);
         }
 
         [Theory, AutoData]
@@ -43,14 +43,14 @@ namespace mi7.Test
         [Theory, AutoData]
         public void CanImplicitConvertToDateTime(UnixTimestamp sut)
         {
-            var expected = UnixTimestamp.Epoch.AddSeconds(sut.Value);
+            var expected = UnixTimestamp.Epoch.AddSeconds(sut.SecondsSinceEpoch);
             Assert.Equal(expected, sut);
         }
 
         [Theory, AutoData]
         public void CanImplicitConvertToString(UnixTimestamp sut)
         {
-            var expected = sut.Value.ToString(CultureInfo.InvariantCulture);
+            var expected = sut.SecondsSinceEpoch.ToString(CultureInfo.InvariantCulture);
             Assert.Equal(expected, sut);
         }
     }
