@@ -18,8 +18,8 @@ namespace mi7
         {
             result = new UnixTimestamp();
 
-            int seconds;
-            if (!int.TryParse(value, out seconds))
+            long seconds;
+            if (!long.TryParse(value, out seconds))
                 return false;
 
             result = new UnixTimestamp(seconds);
