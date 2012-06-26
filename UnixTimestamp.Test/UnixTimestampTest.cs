@@ -9,19 +9,19 @@ namespace mi7.Test
     public class UnixTimestampTest
     {
         [Theory, AutoData]
-        public void ValueIsExpected(int expected)
+        public void SecondsSinceEpochIsExpected(long expected)
         {
             var actual = new UnixTimestamp(expected);
             Assert.Equal(expected, actual.SecondsSinceEpoch);
         }
 
         [Theory, AutoData]
-        public void CanParseFromString(int expected)
+        public void CanParseFromString(long expected)
         {
             UnixTimestamp actual;
             UnixTimestamp.TryParse(expected.ToString(CultureInfo.InvariantCulture), out actual);
 
-            Assert.Equal(expected, actual);
+            Assert.Equal(expected, actual.SecondsSinceEpoch);
         }
 
         [Fact]
@@ -52,6 +52,20 @@ namespace mi7.Test
         {
             var expected = sut.SecondsSinceEpoch.ToString(CultureInfo.InvariantCulture);
             Assert.Equal(expected, sut);
+        }
+
+        [Fact]
+        public void CanParseDateTimeMaxValue()
+        {
+            var sut = (UnixTimestamp)DateTime.MaxValue;
+            Assert.Equal(DateTime.MaxValue, sut);
+        }
+
+        [Fact]
+        public void CanParseDateTimeMinValue()
+        {
+            var sut = (UnixTimestamp)DateTime.MinValue;
+            Assert.Equal(DateTime.MinValue, sut);
         }
     }
 }

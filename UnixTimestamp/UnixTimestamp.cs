@@ -7,9 +7,9 @@ namespace mi7
     {
         public static readonly DateTime Epoch = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
 
-        public readonly int SecondsSinceEpoch;
+        public readonly long SecondsSinceEpoch;
 
-        public UnixTimestamp(int secondsSinceEpoch)
+        public UnixTimestamp(long secondsSinceEpoch)
         {
             SecondsSinceEpoch = secondsSinceEpoch;
         }
@@ -18,21 +18,21 @@ namespace mi7
         {
             result = new UnixTimestamp();
 
-            int secondsSinceEpoch;
-            if (!int.TryParse(value, out secondsSinceEpoch))
+            int seconds;
+            if (!int.TryParse(value, out seconds))
                 return false;
 
-            result = new UnixTimestamp(secondsSinceEpoch);
+            result = new UnixTimestamp(seconds);
             return true;
         }
 
         public static explicit operator UnixTimestamp(DateTime dateTime)
         {
-            var secondsSinceEpoc = (int)(dateTime - Epoch).TotalSeconds;
+            var secondsSinceEpoc = (long)(dateTime - Epoch).TotalSeconds;
             return new UnixTimestamp(secondsSinceEpoc);
         }
 
-        public static implicit operator int(UnixTimestamp timestamp)
+        public static implicit operator long(UnixTimestamp timestamp)
         {
             return timestamp.SecondsSinceEpoch;
         }
@@ -44,6 +44,9 @@ namespace mi7
 
         public static implicit operator DateTime(UnixTimestamp timestamp)
         {
+            if (timestamp.SecondsSinceEpoch >= 253402300800)
+                return DateTime.MaxValue;
+
             return Epoch.AddSeconds(timestamp.SecondsSinceEpoch);
         }
     }
