@@ -4,35 +4,6 @@
   <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
     <Rule Id="CA1014" Action="None" />
     <Rule Id="CA1017" Action="None" />
-    <Rule Id="CA1018" Action="None" />
-    <Rule Id="CA1019" Action="None" />
-    <Rule Id="CA1020" Action="None" />
-    <Rule Id="CA1021" Action="None" />
-    <Rule Id="CA1023" Action="None" />
-    <Rule Id="CA1024" Action="None" />
-    <Rule Id="CA1025" Action="None" />
-    <Rule Id="CA1026" Action="None" />
-    <Rule Id="CA1027" Action="None" />
-    <Rule Id="CA1028" Action="None" />
-    <Rule Id="CA1030" Action="None" />
-    <Rule Id="CA1031" Action="None" />
-    <Rule Id="CA1032" Action="None" />
-    <Rule Id="CA1033" Action="None" />
-    <Rule Id="CA1034" Action="None" />
-    <Rule Id="CA1035" Action="None" />
-    <Rule Id="CA1036" Action="None" />
-    <Rule Id="CA1038" Action="None" />
-    <Rule Id="CA1039" Action="None" />
-    <Rule Id="CA1040" Action="None" />
-    <Rule Id="CA1041" Action="None" />
-    <Rule Id="CA1043" Action="None" />
-    <Rule Id="CA1044" Action="None" />
-    <Rule Id="CA1045" Action="None" />
-    <Rule Id="CA1046" Action="None" />
-    <Rule Id="CA1047" Action="None" />
-    <Rule Id="CA1048" Action="None" />
-    <Rule Id="CA1049" Action="None" />
-    <Rule Id="CA1050" Action="None" />
     <Rule Id="CA1051" Action="None" />
     <Rule Id="CA1052" Action="None" />
     <Rule Id="CA1053" Action="None" />
