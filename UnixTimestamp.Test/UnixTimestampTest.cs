@@ -92,7 +92,7 @@ namespace MI7.Test
             Assert.True(timestamp1 != timestamp2);
         }
 
-        [Fact]
+        [Theory, AutoData]
         public void CanAddTwoUnixTimestamps(
             UnixTimestamp a,
             UnixTimestamp b)
