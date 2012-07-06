@@ -102,5 +102,13 @@ namespace MI7.Test
 
             Assert.Equal(expected, actual);
         }
+
+        [Theory, AutoData]
+        public void GetHashCodeReturnsHashCodeOfLong(
+            UnixTimestamp sut)
+        {
+            var expected = sut.SecondsSinceEpoch.GetHashCode();
+            Assert.Equal(expected, sut.GetHashCode());
+        }
     }
 }
