@@ -5,22 +5,6 @@
     <Rule Id="CA1014" Action="None" />
     <Rule Id="CA1017" Action="None" />
     <Rule Id="CA1051" Action="None" />
-    <Rule Id="CA1400" Action="None" />
-    <Rule Id="CA1401" Action="None" />
-    <Rule Id="CA1402" Action="None" />
-    <Rule Id="CA1403" Action="None" />
-    <Rule Id="CA1404" Action="None" />
-    <Rule Id="CA1405" Action="None" />
-    <Rule Id="CA1406" Action="None" />
-    <Rule Id="CA1407" Action="None" />
-    <Rule Id="CA1408" Action="None" />
-    <Rule Id="CA1409" Action="None" />
-    <Rule Id="CA1410" Action="None" />
-    <Rule Id="CA1411" Action="None" />
-    <Rule Id="CA1412" Action="None" />
-    <Rule Id="CA1413" Action="None" />
-    <Rule Id="CA1414" Action="None" />
-    <Rule Id="CA1415" Action="None" />
     <Rule Id="CA1500" Action="None" />
     <Rule Id="CA1501" Action="None" />
     <Rule Id="CA1502" Action="None" />
