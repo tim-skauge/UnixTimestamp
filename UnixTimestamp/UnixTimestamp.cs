@@ -7,7 +7,7 @@ namespace MI7
     {
         public static readonly DateTime Epoch = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
 
-        private readonly long secondsSinceEpoch;
+        private long secondsSinceEpoch;
 
         public UnixTimestamp(long secondsSinceEpoch)
         {
@@ -29,6 +29,16 @@ namespace MI7
 
             result = new UnixTimestamp(seconds);
             return true;
+        }
+
+        /// <summary>
+        /// Adds the specified <see cref="UnixTimestamp" /> to this instance
+        /// and returns the instance itself
+        /// </summary>
+        public UnixTimestamp Add(UnixTimestamp unixTimestamp)
+        {
+            secondsSinceEpoch += unixTimestamp;
+            return this;
         }
 
         public static explicit operator UnixTimestamp(DateTime dateTime)

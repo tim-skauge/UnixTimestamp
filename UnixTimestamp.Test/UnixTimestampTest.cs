@@ -110,5 +110,14 @@ namespace MI7.Test
             var expected = sut.SecondsSinceEpoch.GetHashCode();
             Assert.Equal(expected, sut.GetHashCode());
         }
+
+        [Theory, AutoData]
+        public void AddReturnsExpected(
+            UnixTimestamp timestamp1,
+            UnixTimestamp timestamp2)
+        {
+            var expected = timestamp1 + timestamp2;
+            Assert.Equal(expected, timestamp1.Add(timestamp2));
+        }
     }
 }
