@@ -4,7 +4,7 @@ using Ploeh.AutoFixture.Xunit;
 using Xunit;
 using Xunit.Extensions;
 
-namespace mi7.Test
+namespace MI7.Test
 {
     public class UnixTimestampTest
     {

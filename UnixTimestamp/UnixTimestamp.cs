@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace mi7
+namespace MI7
 {
     public struct UnixTimestamp
     {

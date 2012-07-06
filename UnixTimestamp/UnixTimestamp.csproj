@@ -8,8 +8,8 @@
     <ProjectGuid>{82F9ECD7-E1E2-4674-8348-FDCAE145E9C8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>mi7</RootNamespace>
-    <AssemblyName>mi7.UnixTimestamp</AssemblyName>
+    <RootNamespace>MI7</RootNamespace>
+    <AssemblyName>MI7.UnixTimestamp</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
