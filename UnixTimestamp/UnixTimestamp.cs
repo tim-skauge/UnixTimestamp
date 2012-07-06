@@ -41,6 +41,11 @@ namespace MI7
             return this;
         }
 
+        public static UnixTimestamp FromDateTime(DateTime dateTime)
+        {
+            return (UnixTimestamp)dateTime;
+        }
+
         public static explicit operator UnixTimestamp(DateTime dateTime)
         {
             var secondsSinceEpoc = (long)(dateTime - Epoch).TotalSeconds;

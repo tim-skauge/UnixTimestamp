@@ -119,5 +119,13 @@ namespace MI7.Test
             var expected = timestamp1 + timestamp2;
             Assert.Equal(expected, timestamp1.Add(timestamp2));
         }
+
+        [Theory, AutoData]
+        public void FromDateTimeReturnsExpected(
+            DateTime dateTime)
+        {
+            var acutal = UnixTimestamp.FromDateTime(dateTime);
+            Assert.Equal((UnixTimestamp)dateTime, acutal);
+        }
     }
 }
