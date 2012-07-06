@@ -54,5 +54,20 @@ namespace MI7
 
             return Epoch.AddSeconds(timestamp.secondsSinceEpoch);
         }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public bool Equals(UnixTimestamp other)
+        {
+            return other.secondsSinceEpoch == secondsSinceEpoch;
+        }
+
+        public override int GetHashCode()
+        {
+            return secondsSinceEpoch.GetHashCode();
+        }
     }
 }

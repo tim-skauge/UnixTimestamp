@@ -67,5 +67,11 @@ namespace MI7.Test
             var sut = (UnixTimestamp)DateTime.MinValue;
             Assert.Equal(DateTime.MinValue, sut);
         }
+
+        [Fact]
+        public void EqualsReturnsExpected()
+        {
+            Assert.Equal(new UnixTimestamp(1000), new UnixTimestamp(1000));
+        }
     }
 }
