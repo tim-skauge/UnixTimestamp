@@ -1609,41 +1609,6 @@
             Regular Expression extension to Automaton.
             </summary>
         </member>
-        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExp.intersection">
-            <summary>
-              Syntax flag, enables intersection.
-            </summary>
-        </member>
-        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExp.complement">
-            <summary>
-              Syntax flag, enables complement.
-            </summary>
-        </member>
-        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExp.empty">
-            <summary>
-              Syntax flag, enables empty language.
-            </summary>
-        </member>
-        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExp.anystring">
-            <summary>
-              Syntax flag, enables anystring.
-            </summary>
-        </member>
-        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExp.automaton">
-            <summary>
-              Syntax flag, enables named automata.
-            </summary>
-        </member>
-        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExp.interval">
-            <summary>
-              Syntax flag, enables numerical intervals.
-            </summary>
-        </member>
-        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExp.all">
-            <summary>
-              Syntax flag, enables all optional regexp syntax.
-            </summary>
-        </member>
         <member name="M:Ploeh.AutoFixture.DataAnnotations.RegExp.#ctor">
             <summary>
               Prevents a default instance of the <see cref="T:Ploeh.AutoFixture.DataAnnotations.RegExp"/> class from being created.
@@ -1655,7 +1620,7 @@
             </summary>
             <param name="s">A string with the regular expression.</param>
         </member>
-        <member name="M:Ploeh.AutoFixture.DataAnnotations.RegExp.#ctor(System.String,System.Int32)">
+        <member name="M:Ploeh.AutoFixture.DataAnnotations.RegExp.#ctor(System.String,Ploeh.AutoFixture.DataAnnotations.RegExpSyntaxOptions)">
             <summary>
               Initializes a new instance of the <see cref="T:Ploeh.AutoFixture.DataAnnotations.RegExp"/> class from a string.
             </summary>
@@ -1735,6 +1700,41 @@
             Returns the set of automaton identifiers that occur in this regular expression.
             </summary>
             <returns>The set of automaton identifiers that occur in this regular expression.</returns>
+        </member>
+        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExpSyntaxOptions.Intersection">
+            <summary>
+            Enables intersection.
+            </summary>
+        </member>
+        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExpSyntaxOptions.Complement">
+            <summary>
+            Enables complement.
+            </summary>
+        </member>
+        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExpSyntaxOptions.Empty">
+            <summary>
+            Enables empty language.
+            </summary>
+        </member>
+        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExpSyntaxOptions.Anystring">
+            <summary>
+            Enables anystring.
+            </summary>
+        </member>
+        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExpSyntaxOptions.Automaton">
+            <summary>
+            Enables named automata.
+            </summary>
+        </member>
+        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExpSyntaxOptions.Interval">
+            <summary>
+            Enables numerical intervals.
+            </summary>
+        </member>
+        <member name="F:Ploeh.AutoFixture.DataAnnotations.RegExpSyntaxOptions.All">
+            <summary>
+            Enables all optional regexp syntax.
+            </summary>
         </member>
         <member name="T:Ploeh.AutoFixture.DataAnnotations.RegularExpressionAttributeRelay">
             <summary>
