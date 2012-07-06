@@ -7,25 +7,10 @@
     <Rule Id="CA1051" Action="None" />
     <Rule Id="CA1704" Action="None" />
     <Rule Id="CA1709" Action="None" />
-    <Rule Id="CA1800" Action="None" />
     <Rule Id="CA1801" Action="None" />
-    <Rule Id="CA1802" Action="None" />
-    <Rule Id="CA1804" Action="None" />
     <Rule Id="CA1806" Action="None" />
-    <Rule Id="CA1809" Action="None" />
-    <Rule Id="CA1810" Action="None" />
-    <Rule Id="CA1811" Action="None" />
-    <Rule Id="CA1812" Action="None" />
-    <Rule Id="CA1813" Action="None" />
-    <Rule Id="CA1814" Action="None" />
     <Rule Id="CA1815" Action="None" />
     <Rule Id="CA1816" Action="None" />
-    <Rule Id="CA1819" Action="None" />
-    <Rule Id="CA1820" Action="None" />
-    <Rule Id="CA1821" Action="None" />
-    <Rule Id="CA1822" Action="None" />
-    <Rule Id="CA1823" Action="None" />
-    <Rule Id="CA1824" Action="None" />
     <Rule Id="CA1900" Action="None" />
     <Rule Id="CA1901" Action="None" />
     <Rule Id="CA1903" Action="None" />
