@@ -73,5 +73,34 @@ namespace MI7.Test
         {
             Assert.Equal(new UnixTimestamp(1000), new UnixTimestamp(1000));
         }
+
+        [Theory, AutoData]
+        public void SameUnixTimestampReturnsExpectedEquality(
+            [Frozen] long secondsSinceEpoch)
+        {
+            var timestamp1 = new UnixTimestamp(secondsSinceEpoch);
+            var timestamp2 = new UnixTimestamp(secondsSinceEpoch);
+
+            Assert.True(timestamp1 == timestamp2);
+        }
+
+        [Theory, AutoData]
+        public void DifferentUnixTimestampReturnsExpectedInequality(
+            UnixTimestamp timestamp1,
+            UnixTimestamp timestamp2)
+        {
+            Assert.True(timestamp1 != timestamp2);
+        }
+
+        [Fact]
+        public void CanAddTwoUnixTimestamps(
+            UnixTimestamp a,
+            UnixTimestamp b)
+        {
+            var expected = new UnixTimestamp(a.SecondsSinceEpoch + b.SecondsSinceEpoch);
+            var actual = a + b;
+
+            Assert.Equal(expected, actual);
+        }
     }
 }

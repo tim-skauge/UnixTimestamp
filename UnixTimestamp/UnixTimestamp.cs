@@ -55,6 +55,11 @@ namespace MI7
             return Epoch.AddSeconds(timestamp.secondsSinceEpoch);
         }
 
+        public static UnixTimestamp operator +(UnixTimestamp a, UnixTimestamp b)
+        {
+            return new UnixTimestamp(a.SecondsSinceEpoch + b.SecondsSinceEpoch);
+        }
+
         public override bool Equals(object obj)
         {
             return base.Equals(obj);
@@ -68,6 +73,16 @@ namespace MI7
         public override int GetHashCode()
         {
             return secondsSinceEpoch.GetHashCode();
+        }
+
+        public static bool operator ==(UnixTimestamp a, UnixTimestamp b)
+        {
+            return a.Equals(b);
+        }
+
+        public static bool operator !=(UnixTimestamp a, UnixTimestamp b)
+        {
+            return !a.Equals(b);
         }
     }
 }
