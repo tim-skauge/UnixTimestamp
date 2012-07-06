@@ -7,49 +7,8 @@
     <Rule Id="CA1051" Action="None" />
     <Rule Id="CA1704" Action="None" />
     <Rule Id="CA1709" Action="None" />
-    <Rule Id="CA1801" Action="None" />
-    <Rule Id="CA1806" Action="None" />
     <Rule Id="CA1815" Action="None" />
-    <Rule Id="CA1816" Action="None" />
-    <Rule Id="CA2200" Action="None" />
-    <Rule Id="CA2201" Action="None" />
-    <Rule Id="CA2202" Action="None" />
-    <Rule Id="CA2205" Action="None" />
-    <Rule Id="CA2207" Action="None" />
-    <Rule Id="CA2208" Action="None" />
     <Rule Id="CA2210" Action="None" />
-    <Rule Id="CA2211" Action="None" />
-    <Rule Id="CA2212" Action="None" />
-    <Rule Id="CA2213" Action="None" />
-    <Rule Id="CA2214" Action="None" />
-    <Rule Id="CA2215" Action="None" />
-    <Rule Id="CA2216" Action="None" />
-    <Rule Id="CA2217" Action="None" />
-    <Rule Id="CA2218" Action="None" />
-    <Rule Id="CA2219" Action="None" />
-    <Rule Id="CA2220" Action="None" />
-    <Rule Id="CA2221" Action="None" />
-    <Rule Id="CA2222" Action="None" />
-    <Rule Id="CA2223" Action="None" />
-    <Rule Id="CA2224" Action="None" />
     <Rule Id="CA2225" Action="None" />
-    <Rule Id="CA2226" Action="None" />
-    <Rule Id="CA2227" Action="None" />
-    <Rule Id="CA2228" Action="None" />
-    <Rule Id="CA2229" Action="None" />
-    <Rule Id="CA2230" Action="None" />
-    <Rule Id="CA2231" Action="None" />
-    <Rule Id="CA2232" Action="None" />
-    <Rule Id="CA2233" Action="None" />
-    <Rule Id="CA2234" Action="None" />
-    <Rule Id="CA2235" Action="None" />
-    <Rule Id="CA2236" Action="None" />
-    <Rule Id="CA2237" Action="None" />
-    <Rule Id="CA2238" Action="None" />
-    <Rule Id="CA2239" Action="None" />
-    <Rule Id="CA2240" Action="None" />
-    <Rule Id="CA2241" Action="None" />
-    <Rule Id="CA2242" Action="None" />
-    <Rule Id="CA2243" Action="None" />
   </Rules>
 </RuleSet>
