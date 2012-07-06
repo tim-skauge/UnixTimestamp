@@ -2,9 +2,6 @@
 <RuleSet Name="UnixTimestamp" Description="Important Rules" ToolsVersion="10.0">
   <IncludeAll Action="Error" />
   <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
-    <Rule Id="CA1011" Action="None" />
-    <Rule Id="CA1012" Action="None" />
-    <Rule Id="CA1013" Action="None" />
     <Rule Id="CA1014" Action="None" />
     <Rule Id="CA1016" Action="None" />
     <Rule Id="CA1017" Action="None" />
