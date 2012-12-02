@@ -98,5 +98,10 @@ namespace MI7
         {
             return !a.Equals(b);
         }
+
+        public override string ToString()
+        {
+            return secondsSinceEpoch.ToString(CultureInfo.InvariantCulture);
+        }
     }
 }

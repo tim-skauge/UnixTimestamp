@@ -127,5 +127,12 @@ namespace MI7.Test
             var acutal = UnixTimestamp.FromDateTime(dateTime);
             Assert.Equal((UnixTimestamp)dateTime, acutal);
         }
+
+        [Theory, AutoData]
+        public void ToStringReturnsExpected(
+            UnixTimestamp sut)
+        {
+            Assert.Equal(sut.SecondsSinceEpoch.ToString(CultureInfo.InvariantCulture), sut.ToString());
+        }
     }
 }
