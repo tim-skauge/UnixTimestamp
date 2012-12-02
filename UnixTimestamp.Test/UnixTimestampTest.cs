@@ -1,10 +1,9 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 using Ploeh.AutoFixture.Xunit;
 using Xunit;
 using Xunit.Extensions;
 
-namespace MI7.Test
+namespace System.Test
 {
     public class UnixTimestampTest
     {

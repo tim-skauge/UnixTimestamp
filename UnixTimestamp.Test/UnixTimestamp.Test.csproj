@@ -8,8 +8,8 @@
     <ProjectGuid>{344B9B0D-0BB5-4328-B179-97811BAE5832}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MI7.Test</RootNamespace>
-    <AssemblyName>MI7.UnixTimestamp.Test</AssemblyName>
+    <RootNamespace>System.Test</RootNamespace>
+    <AssemblyName>UnixTimestamp.Test</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
