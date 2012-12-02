@@ -3,15 +3,20 @@
   <metadata>
     <id>UnixTimestamp</id>
     <version>$version$</version>
-    <title>$title$</title>
+    <title>UnixTimestamp</title>
     <authors>tims</authors>
-    <owners>$author$</owners>
+    <owners>tims</owners>
     <licenseUrl>https://raw.github.com/mi7/UnixTimestamp/master/LICENSE.txt</licenseUrl>
     <projectUrl>http://github.com/mi7/UnixTimestamp</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>UnixTimestamp is a small struct with one, an only one, purpose: To convert to/from UnixTimestamp in various situations.
+    
+Documentation and source can be found on GitHub at https://github.com/mi7/UnixTimestamp</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2012</copyright>
     <tags>UnixTimestamp</tags>
   </metadata>
+  <files>
+    <file src="UnixTimestamp\bin\Release\*.dll" target="lib" />
+  </files>
 </package>
